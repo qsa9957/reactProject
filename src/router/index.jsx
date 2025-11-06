@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../layout';
-import Dashboard from '../pages/Dashboard';
-import User from '../pages/User';
-import Team from '../pages/Team';
-import Files from '../pages/Files';
+import Dashboard from '../pages/Dashboard/Dashboard';
+import User from '../pages/User/User';
+import Team from '../pages/Team/Team';
+import Files from '../pages/Files/Files';
 
 // 动态路由配置
 const routesConfig = [

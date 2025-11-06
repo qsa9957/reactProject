@@ -15,7 +15,7 @@ const User = () => {
   // 如果有id参数，显示单个用户详情
   if (id) {
     const user = users.find(u => u.id === id);
-    
+
     if (!user) {
       return (
         <Card title="用户详情" variant="outlined">
