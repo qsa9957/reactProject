@@ -1,13 +1,14 @@
 import React from 'react';
 import { Card } from 'antd';
 import HeaderCom from './components/headerCom';
+import { useState } from 'react';
 
 const Dashboard = () => {
-  const personalInfo = {
+  const [personalInfo, setPersonalInfo] = useState({
     name: '张三',
     age: 0,
     email: 'zhangsan@example.com',
-  };
+  });
   const personalInfo2 = {
     name: '李四',
     age: 30,

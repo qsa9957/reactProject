@@ -35,6 +35,8 @@ const HeaderCom = (props) => {
                 )}
                 <button type="primary" onClick={clickFn}>+1</button>
                 <p>当前计数：{num.count}</p>
+                <p>姓名：{props.info.name}</p>
+                <button onClick={() => setPersonalInfo(props.info2)}>切换姓名</button>
             </Card>
             {props.component()}
         </div>
