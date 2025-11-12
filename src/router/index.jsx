@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Layout from '../layout';
 import Dashboard from '../pages/Dashboard/Dashboard';
 import User from '../pages/User/User';
@@ -16,6 +16,10 @@ const routesConfig = [
       requiresAuth: true
     },
     children: [
+      {
+        path: '', // 默认路由，使用Navigate组件重定向到仪表盘
+        element: <Navigate to="/dashboard" replace />
+      },
       {
         path: 'dashboard',
         element: <Dashboard />,
